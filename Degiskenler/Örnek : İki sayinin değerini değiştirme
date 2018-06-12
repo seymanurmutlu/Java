@@ -1,0 +1,40 @@
+package iki.sayının.değerini.değiştirme;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author seymanurmutlu
+ */
+public class İkiSayınınDeğeriniDeğiştirme {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        /*Bu program girilen iki sayının değerlerini birbirleri ile değiştirir.*/
+        Scanner scanner = new Scanner(System.in);/*öncelikle bunu dahil ediyoruz.*/
+        
+        int sayi1,sayi2; /*iki değişken tanımladık sonra konsoldan aldığımız 
+        değerleri içlerine atayacağız.*/ 
+        
+        System.out.print("Birinci Sayiyi Girin : ");
+        sayi1 = scanner.nextInt();
+        
+        System.out.print("İkinci Sayiyi Girin :");
+        sayi2 = scanner.nextInt();
+        
+        
+        /*şimdi değişkenleri yer değiştireceğiz. Bunu yapabilmek için boş bir 
+        değişkene ihtiyacımız var*/
+        System.out.println("Yerdeğiştirmeden önce sayi1 : "+sayi1 +" sayi2 : "+sayi2);
+        
+        int temp; //boş bırakıyoruz.
+        temp = sayi1 ; //temp'i sayi1'in içindekine eşitle
+        sayi1 = sayi2; //sayi1'in içine sayi2'nin içindekini at.
+        sayi2 = temp;  //sayi2'nin içine sayi1'in içindekini at.
+      
+        System.out.println("Yerdeğiştirdikten sonra sayi1 : "+sayi1 +" sayi2 : "+sayi2);
+    }
+    
+}

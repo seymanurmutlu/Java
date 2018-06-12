@@ -1,0 +1,38 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author seymanurmutlu
+ */
+public class Main {
+    
+    public static void main(String[] args){
+        /*Char veri tipi : Karakterleri göstermek için kullanılır. 2byte yer kaplar
+        2^16 tane karakteri simgeler.*/
+        /*Boolean veri tipi: Koşul durumlarında kullanılır. True veya false değeri
+        alır.*/
+        char a = 'A';
+        char b = '?';
+        char c = 2000;
+        char d = '\u176C';//internetten unicode table olarak aratabilirsiniz.
+        //karakterin unicode'unu direkt kopyalıyoruz U+176C kopyaladığımız şey 
+        //bu oluyor başındaki U+ 'yı silip \u176C buna dönüştürüyoruz.
+       char e = '\u0DDB';
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(d);
+        System.out.println(e);
+            
+        //Boolean'a koşul durumlarında tekrar bakacağız.
+        boolean i = true ;
+        boolean j = false;
+        
+        System.out.println(i);
+        System.out.println(j);
+    }
+    
+}

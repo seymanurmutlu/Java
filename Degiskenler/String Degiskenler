@@ -1,0 +1,55 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package stringler;
+
+/**
+ *
+ * @author seymanurmutlu
+ */
+public class Stringler {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        String a = "Java ";
+        String b = "Programlama ";
+        String c = "Dili";
+        
+       String toplam = a + b + c ;
+       System.out.println("Toplam " + toplam);
+          
+       //Bir dönüştürme yapalım.
+       String a1 = "Merhaba ";
+       int d = 35;
+       
+       String toplam2 = a1 + d; //gördüğünüz gibi java herhangi bir program çıkarmadı
+       System.out.println(toplam2);
+       
+       //Başka bir dönüştürme yapalım.
+       double e = 3.52;
+       byte e1 = 10;
+       
+       a1 = a1 + e + e1;
+       
+       System.out.println(a1);
+       
+       //Başka bir dönüştürme yapalım
+       char f = '?';
+       String f1 = "Merhaba Nasılsın" + f;
+       
+       String g = "Java "+
+                  "Programlama "
+               +  "Dili" ; //kod uzunsa bu şekilde toplanabilir.
+        System.out.println(g);
+       
+        // \t = tab ve \n = new line inceleyelim
+        System.out.println("java\tprogramlama\tdili.");//her \t'de 4 boşlık bırakır
+        System.out.println("java\nprogramlama\ndili"); //her \n'de bir alt satira gecer.
+        
+    }
+    
+}

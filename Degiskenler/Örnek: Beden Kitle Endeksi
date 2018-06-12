@@ -1,0 +1,38 @@
+package beden.kitle.endeksi;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author seymanurmutlu
+ */
+public class BedenKitleEndeksi {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        /*Bu program kullanıcıdan aldığı boy ve kilo değerlerine göre
+        vücut kitle endeksi hesaplayıp ekrana basar.
+        
+        bedenKitleEndeksi = kilo / boy(m) * boy (m)
+        */
+        
+        Scanner scanner = new Scanner(System.in); /*öncelikle konsoldan input
+        almak için scanner obejesini oluşturduk.*/
+        
+        System.out.print("Kilonuzu Girin(Tamsayi) : ");
+        int kilo = scanner.nextInt();
+        
+        System.out.print("Boyunuzu Girin(Örnek : 1,73) :");
+        double boy = scanner.nextDouble();
+        
+        double bki = kilo / (boy*boy) ;
+        
+        System.out.println("Beden Kitle İndeksi : "+bki);
+        
+                
+                
+    }
+    
+}

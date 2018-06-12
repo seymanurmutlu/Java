@@ -1,0 +1,35 @@
+
+package kilometreye.göre.ödenecek.miktar;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author seymanurmutlu
+ */
+public class KilometreyeGöreÖdenecekMiktar {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        /*Bu program kullanıcıdan aracın kilometrede ne kadar yaktığını ve
+        kaç kilometre yol gittiğini alır ve sürücünün toplam ödemesi gereken
+        miktarı ekrana basar.*/
+        
+        Scanner scanner = new Scanner(System.in);/*Oncelikle scanner objesi
+        ekledik.*/
+        
+        System.out.print("Araç kilometre kaç kuruş yakıyor?(Ornek 0,54) ");
+        float kbyakit = scanner.nextFloat();
+        
+        System.out.print("Kaç kilometre gittiniz ? ");
+        int km = scanner.nextInt();
+        
+        double toplam = kbyakit*km;
+        
+        System.out.println("Ödenmesi gereken miktar : "+toplam +" tl dir...");
+        
+    }
+    
+}

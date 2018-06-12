@@ -1,0 +1,31 @@
+package hipotenüs.bulma;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author seymanurmutlu
+ */
+public class HipotenüsBulma {
+
+    public static void main(String[] args) {
+        /*Bir dik üçgenin dik kenarları girilen bir üçgenin hipotenüsünü 
+        bulup ekrana basar.*/
+        
+        Scanner scanner = new Scanner(System.in);
+        
+        int a,b ; //birinci ve ikinci kenari tanımlayıp boş bıraktım.
+        
+        System.out.print("Birinci kenarı giriniz : ");
+        a = scanner.nextInt();//klavyeden aldığım değeri atadım.
+        
+        System.out.print("İkinci kenarı giriniz : ");
+        b = scanner.nextInt();//klavyeden aldığım değeri atadım.
+        
+        double h = Math.sqrt(a*a + b*b) ;//java içerisinde hazır olarak bulunan Math kütüphanesini kullandım.
+        //sqrt kökünü alma fonksiyonudur.
+        
+        System.out.println("hipotenüs : "+h);
+    }
+    
+}

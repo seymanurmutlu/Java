@@ -1,0 +1,31 @@
+
+package ınputalma;
+
+import java.util.Scanner;
+
+public class InputAlma {
+
+  
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in); /*Yazdıktan sonra ctrl + shift 
+        + ı ile kütüphane dahil ediyoruz ve yukarıya import java.util.Scanner; 
+        yazısı geliyor.*/
+       
+        //string için
+        System.out.println("Lütfen Bir Sözcük Girin : ");
+        String yazi = scanner.nextLine();
+        System.out.println("Yazi : "+yazi);
+        
+        //integer sayi için
+        System.out.println("Lütfen Yaşınızı Girin : ");
+        int yas = scanner.nextInt();
+        System.out.println("Yaşınız : "+yas);
+        
+        //double sayi için
+        System.out.println("Lütfen Double Sayı Girin(ondalık kısma geçerken virgül kullanınız) : ");
+        double sayi = scanner.nextDouble();
+        System.out.println("Girilen sayi : "+sayi);
+        
+    }
+    
+}

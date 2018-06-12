@@ -36,5 +36,5 @@ public class İkiSayınınDeğeriniDeğiştirme {
       
         System.out.println("Yerdeğiştirdikten sonra sayi1 : "+sayi1 +" sayi2 : "+sayi2);
     }
-    
+     
 }

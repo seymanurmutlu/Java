@@ -1,0 +1,35 @@
+package stringler.detay;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author seymanurmutlu
+ */
+public class StringlerDetay {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in); /*mac OS kullandığım için cmd 
++ shift + ı ile  dahil ediyorum.*/
+        System.out.println("Yaş giriniz : ");
+        int yas = scanner.nextInt(); /*bizden tamsayi deger istiyor ve biz 
+        tamsayiyi girdikten sonra enter tuşuna bastığımızda bu enter'ı \n olarak
+        algılıyor bunu da isim stringi sırada olduğu için ona atıyor böylelikle 
+        bizden isim'i istemiyor. Peki bunun için ne yapacağız ? Bunu çözmek için
+        default bir tane input atamamız lazım yani yas degiskeninden hemen sonra
+        herhangi bir değer atamadan scanner.nextLine() şeklinde bir şey yazacağız 
+        ve enter'a bastığımızda buna atanacak ve bize sorun çıkarmayacak.*/ 
+        scanner.nextLine();
+        
+        System.out.println("İsim giriniz : ");
+        String isim = scanner.nextLine(); /*Bunun adi literatürde dummy yani 
+salakça,saçma olarak geçer.*/
+        
+        
+        System.out.println("Yaş : " +yas);
+        System.out.println("İsim : " +isim);
+        
+    }

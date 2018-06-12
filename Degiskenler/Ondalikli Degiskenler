@@ -1,0 +1,77 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author seymanurmutlu
+ */
+public class Main {
+    
+    public static void main(String[] args){
+        //Double : 64bit = 8byte
+        //Float : 32bit = 4byte
+        
+        //Otomatik dönüştürme : int --> float --> double
+        
+        double a = 4.32;
+        double b = 5.0;
+        double c = 5d;
+        double d = 4.32d; //sonuna d ekleyince double'a dönüştür demek.  
+        
+        System.out.println("a ="+a);
+        System.out.println("b ="+b);
+        System.out.println("c ="+c);
+        System.out.println("d ="+d);
+       
+        float e1 = (float) 5.0; //5.0 float için büyük bir deger oldugundan tekrar float'a 
+        //dönüştürme işlemi yapıyoruz.
+        float e2 = 5f ; //başına (float) yazmak ve sonuna f yazmak aynı şeylerdir.
+        float e3 = 4.33f;
+        
+        
+        int f1 = 22 / 7; //degisken tipi int oldugu için ondalık kısmı siliniyor.
+        float f2 = 22f / 7f;
+        double f3 = 22d / 7d;
+        
+        System.out.println("f1 = "+f1);
+        System.out.println("f2 = "+f2);
+        System.out.println("f3 = "+f3);
+         
+        
+        //Şimdi bir otomatik dönüştürme yapalım
+        //Hatırlayacağımız gibi otomatik dönüştürme soldan sağa doğru
+        //int --> float --> double'dı
+        int i = 5;
+        float j = i ;
+        
+        System.out.println(i);
+        System.out.println(j);
+        
+        //şimdi de kendimiz bir dönüştürme yapalım.
+        
+        double k = 3.52;
+      //  float l = k; bu şekilde bıraktığımızda programın hata verdiğini göreceğiz.
+      float l = (float) k ; //kendimiz dönüştürme yaptık.
+      System.out.println(k);
+      System.out.println(l);
+         
+      double sayi1 = 70.41;
+      double sayi2 = 60d;
+      double sayi3 = 80.2;
+      
+      System.out.println("Ortalama1 (double ortalama) : "+ (sayi1+sayi2+sayi3) / 3);
+      
+      //ayni işlemi float için yapalım.
+      
+      float sayi4 = 70.41f;
+      float sayi5 = 60f;
+      float sayi6 = 80.2f;
+      
+      System.out.println("Ortalama2 (float ortalama) : "+(sayi4+sayi5+sayi6) / 3);
+            
+    }
+    
+}

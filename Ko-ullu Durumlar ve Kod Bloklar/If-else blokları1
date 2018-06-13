@@ -1,0 +1,42 @@
+package soru;
+
+import java.util.Scanner;
+
+public class Soru {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        /*
+        if(koşul) {
+        
+        koşul sağlanırsa (true) bu blok çalışır.
+        
+        }
+        
+        else {
+        
+        koşul sağlanmadığında(false) direkt bu blok çalışır.
+          
+        }
+       
+        */
+        
+        Scanner scanner = new Scanner(System.in); 
+        
+        System.out.println("Lütfen bir sayi girin : ");
+        int sayi = scanner.nextInt();
+        
+        if(sayi < 0){
+            System.out.println("Negatif");
+        }
+        else{
+            System.out.println("Pozitif veya 0");
+        }
+        
+        
+    }
+    
+}
+//else blokları if olmadan çalışmaz.

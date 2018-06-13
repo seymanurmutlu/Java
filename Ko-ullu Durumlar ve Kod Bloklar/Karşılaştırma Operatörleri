@@ -1,1 +1,29 @@
+package operatörler;
 
+/**
+ *
+ * @author seymanurmutlu
+ */
+public class Operatörler {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        //eşit mi? ==
+        //eşit değil mi? !=
+        //büyük mü? >
+        //küçük mü? <
+        //küçük veya eşit mi? <=
+        
+        System.out.println(3 == 4); //ekrana boolean tipinde bir değer basacaktır.
+        System.out.println(3 != 4); 
+        System.out.println(4 > 1); 
+        System.out.println(3 >= 3 );
+        System.out.println(4 <= 3); 
+        
+        System.out.println("Mehmet" == "Mehmet"); //string karşılaştırma
+       
+    }
+    
+}

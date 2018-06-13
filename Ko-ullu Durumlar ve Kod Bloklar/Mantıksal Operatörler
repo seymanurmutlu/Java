@@ -1,0 +1,41 @@
+package operatörler;
+
+/**
+ *
+ * @author seymanurmutlu
+ */
+public class Operatörler {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        /*
+        Mantıksal Operatörler
+        
+        && --> and operatörü : 've' anlamı katar,
+        bütün sonuçlar kendi içinde true ise genel sonuç true,
+        bütün sonuçlar kendi içinde false ise genel sonuç false olur.
+         
+        || --> or operatörü : 'veya' anlamı katar,
+        sonuçlardan en az birisi true ise genel sonuç true,
+        hepsi false ise genel sonuç false olur.
+        
+        ! --> not operatörü : 'değil' işlemi
+        */
+        
+        System.out.println(3 == 3); //true
+        System.out.println(2 < 3);  //true
+        System.out.println(3 == 3 && 2 < 3); //ikisi de true olduğu için true
+        System.out.println(3 == 3 && 2 > 3); //biri false olduğu için false
+        System.out.println(3 == 3 && 2 < 3 && "Mehmet" == "Mehmet"); //hepsi true
+        System.out.println("----");
+        System.out.println(3 != 3 || 2 > 3 ||"Mehmet" == "Mehmet"); //or operatörü
+        System.out.println("----");
+        System.out.println(! (3 < 4)); //cevabı tersine çevirir
+        System.out.println("----");
+        System.out.println(!((3<4 || "Mehmet" == "Mehmet") && 3.4 > 2.1));
+        
+    }
+    
+}

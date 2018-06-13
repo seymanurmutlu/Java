@@ -1,0 +1,68 @@
+package soru;
+
+import java.util.Scanner;
+
+public class Soru {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        /*
+        if(koşul) {
+        
+        koşul sağlanırsa (true) bu blok çalışır.
+            
+        }
+        
+        else if(başka bir koşul){
+        }
+        
+        else if(başka bir koşul){
+        }
+        
+        else {
+        
+        koşul sağlanmadığında(false) direkt bu blok çalışır.
+        
+        }
+       
+        */
+        
+        Scanner scanner = new Scanner(System.in); 
+        
+        System.out.println("Lütfen notunuzu girin : ");
+        int not = scanner.nextInt();
+        
+        if(not >= 90){
+            System.out.println("AA");
+        }
+        
+        else if(not >= 85){
+            System.out.println("BA");
+        }
+        
+        else if(not>= 80){
+            System.out.println("BB");
+        }
+        
+        else if(not>= 75){
+            System.out.println("CB");
+        }
+        
+        else if(not>=65){
+            System.out.println("CC");
+        }
+        
+        else if(not>= 50){
+            System.out.println("Koşullu Geçer");
+        }
+        
+        else{
+            System.out.println("Dersten kaldınız.");
+        }
+             
+        
+    }
+    
+}

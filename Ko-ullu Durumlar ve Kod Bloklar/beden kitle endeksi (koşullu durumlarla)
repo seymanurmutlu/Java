@@ -1,0 +1,41 @@
+package soru;
+
+import java.util.Scanner;
+
+public class Soru {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        /*
+        3 sayidan buyuk olanı ekranı basan program
+        */
+        
+        Scanner scanner = new Scanner(System.in); 
+        
+        System.out.println("Lütfen birinci sayiyi girin : ");
+        int sayi1 = scanner.nextInt();
+        
+        System.out.println("Lütfen ikinci sayiyi girin : ");
+        int sayi2 = scanner.nextInt();
+        
+        System.out.println("Lütfen üçüncü sayiyi girin : ");
+        int sayi3 = scanner.nextInt();
+        
+        int maks = -1 ; //en buyuk degeri icine atacağımız degisken
+        
+        if(sayi1 >= sayi2 && sayi1 >= sayi3)
+            maks = sayi1;
+        
+        else if(sayi2 >= sayi3 && sayi2 >= sayi1)
+            maks = sayi2;
+        
+        else {
+            maks = sayi3;
+        }
+            
+        System.out.println("Maksimum sayi : "+maks);
+    }
+    
+}

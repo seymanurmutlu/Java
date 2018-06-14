@@ -1,0 +1,71 @@
+package soru;
+
+import java.util.Scanner;
+
+public class Soru {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        /*
+        Switch case ile 4 işlem yapan bir hesap makinesi 
+        */
+        Scanner scanner = new Scanner(System.in);
+        
+        String islemler ="1. Toplama İşlemi\n"
+                            +"2. Çıkartma İşlemi\n"
+                            +"3. Çarpma İşlemi\n"
+                            +"4. Bölme İşlemi";
+                              
+        System.out.println("***************************");
+        System.out.println(islemler);
+        System.out.println("***************************");
+        System.out.println("İşlemi giriniz :");
+        int islem = scanner.nextInt();
+        
+        int a,b;
+        
+        switch(islem){
+            
+            case 1 :
+                System.out.println("Birinci sayiyi girin :");
+                a = scanner.nextInt();
+                System.out.println("İkinci sayiyi girin :");
+                b = scanner.nextInt();
+            
+                System.out.println("Girilen değerlerin toplamı :" + (a+b));
+                break ;
+            
+            case 2 :
+                System.out.println("Birinci sayiyi girin :");
+                a = scanner.nextInt();
+                System.out.println("İkinci sayiyi girin :");
+                b = scanner.nextInt();
+            
+                System.out.println("Girilen değerlerin farkı :" + (a-b));
+                break ;
+                
+            case 3 :
+                System.out.println("Birinci sayiyi girin :");
+                a = scanner.nextInt();
+                System.out.println("İkinci sayiyi girin :");
+                b = scanner.nextInt();
+            
+                System.out.println("Girilen değerlerin çarpımı :" + (a*b));
+                break ;
+            case 4 :
+                System.out.println("Birinci sayiyi girin :");
+                a = scanner.nextInt();
+                System.out.println("İkinci sayiyi girin :");
+                b = scanner.nextInt();
+            
+                System.out.println("Girilen değerlerin bölümü :" +(double)(a/b));
+                break ;
+                
+            default :
+                System.out.println("Yanlış işlem kodu seçtiniz.");
+        }
+        
+        }
+    }

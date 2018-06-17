@@ -1,0 +1,67 @@
+package javaapplication14;
+
+/**
+ *
+ * @author seymanurmutlu
+ */
+public class JavaApplication14 {
+
+    
+    public static void main(String[] args) {
+        /*for (başlatma ; koşul ; arttırma veya azaltma) {  
+        
+        Döngü, koşul sağlandığı sürece çalışmaya devam edecek.
+        
+        }
+      
+        */
+    
+    int i = 0;
+    
+    for(i=0;i<5;i++){
+        
+        System.out.println("i = "+i);
+    }  
+        System.out.println("***********************");
+    for(int j = 0 ; j < 5; j++){
+        
+        System.out.println("j = "+j); //burada tanımlana j sadece döngüde kullanılabilir.
+        
+    }
+    System.out.println("***********************");
+    int k=10;
+    for (k = 10; k > 0; k--){
+        
+        System.out.println("k = "+k);
+                 
+    }
+    System.out.println("***********************");
+    int a = 0;
+    
+    for(; a < 5; a++){
+        
+        System.out.println("merhaba java");
+               
+        
+    }
+    System.out.println("***********************");
+    int b = 0;
+    int c = 10;
+    for (; b < 10 && c > 0 ; b++,c--){
+        
+        System.out.println("b = "+b);
+        System.out.println("c = "+c);
+        
+    }
+    System.out.println("***********************");
+    
+    for(int j = 2; j<100; j *= 2){
+        
+        System.out.println("j = "+j);
+        
+    }
+    System.out.println("***********************");
+   
+}
+
+}

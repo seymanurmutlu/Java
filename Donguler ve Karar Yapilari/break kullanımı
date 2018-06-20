@@ -1,0 +1,41 @@
+package dowhile;
+
+import java.util.Scanner;
+
+
+public class DoWhile {
+
+    
+    public static void main(String[] args) {
+        /*
+        break anahtar kelimesi
+        
+        Döngü herhangi bir anda herhangi bir zamanda break ifadesiyle karşılaştığında çalışmayı durdurur.
+        Böylelikle döngü hiçbir koşula bağlı kalmadan sonuçlanır.
+        
+        break ifadesi sadece ve sadece içinde bulunduğu döngüyü sonuçlandırır. Eğer iç içe döngüler varsa
+        ve içteki döngüde break kullanılmışsa sadece içteki döngü sona erer.
+        
+        continue anahtar kelimesi
+        
+        Döngü herhangi bir yerde ve herhangi bir zamanda break ifadesiyle karşılaştığı zaman geri kalan
+        işlemlerini yapmadan direkt döngü bloğunun başına döner.
+
+        */
+        Scanner scanner = new Scanner(System.in);
+        int i = 0;
+        System.out.println("-1 yazılana kadar döngüden çıkmayan sistem ");
+        while(true){
+           
+            int islem = scanner.nextInt();
+            if(islem == -1){
+                System.out.println("döngüden çıkılıyor ...");
+                break;
+            }
+            
+            System.out.println("islem = "+islem);
+            
+        }
+            
+    }
+    

@@ -1,0 +1,36 @@
+package dowhile;
+
+
+public class DoWhile {
+
+    
+    public static void main(String[] args) {
+        /*
+        break anahtar kelimesi
+        
+        Döngü herhangi bir anda herhangi bir zamanda break ifadesiyle karşılaştığında çalışmayı durdurur.
+        Böylelikle döngü hiçbir koşula bağlı kalmadan sonuçlanır.
+        
+        break ifadesi sadece ve sadece içinde bulunduğu döngüyü sonuçlandırır. Eğer iç içe döngüler varsa
+        ve içteki döngüde break kullanılmışsa sadece içteki döngü sona erer.
+        
+        continue anahtar kelimesi
+        
+        Döngü herhangi bir yerde ve herhangi bir zamanda break ifadesiyle karşılaştığı zaman geri kalan
+        işlemlerini yapmadan direkt döngü bloğunun başına döner.
+
+        */
+        for(int i = 0 ;i<10 ; i++){
+            
+            if(i == 3 || i == 5){
+                continue;
+            }
+            
+            System.out.println("i = "+i);
+       
+            
+        }
+            
+    }
+    
+}
